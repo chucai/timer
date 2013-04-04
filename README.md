@@ -12,6 +12,8 @@
 gem install sinatra
 gem install sinatra-contrib
 gem install nokogiri
+gem install whenever
+gem install multi_json
 ```
 
 ## 版本说明

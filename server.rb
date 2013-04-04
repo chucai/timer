@@ -1,8 +1,10 @@
 #encoding: utf-8
 require 'sinatra'
-require "sinatra/reloader" if development?
+require "sinatra/reloader" #if development?
 require 'open-uri'
 require "nokogiri"
+require "multi_json"
+
 require_relative "models/item"
 require_relative "models/list"
 
