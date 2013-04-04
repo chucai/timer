@@ -5,19 +5,50 @@
 <script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
 	<title>最新项目搜集</title>
 </head>
+<style type="text/css">
+  .section {
+    padding: 20px 0 10px 0;
+  }
+</style>
 <body>
-  <header data-role="header" data-position="fixed">
-    <h1>项目列表</h1>
-  </header>
-  <ul data-role="listview">
-    <% @items.each do |item| %>
-      <li>
-        <a href="<%=item.site %>" target="_blank"><%=item.name %></a>
-      </li>
-    <% end %>
-  </ul>
-  <footer data-role="footer">
-    <h1>copyright @chucai 2013</h1>
-  </footer><!-- /footer -->
+  <div data-role="page">
+    <header data-role="header" data-position="fixed" data-theme="b">
+      <h1>项目列表</h1>
+    </header>
+
+    <div data-role="content">
+      <div class="section">
+        <ol data-role="listview" data-inset="true">
+          <li data-role="list-divider"><%=@rubychina.type %></li>
+          <% @rubychina.items.each do |item| %>
+            <li>
+              <a href="<%=item.site %>" target="_blank">
+                <%=item.name %>
+              </a>
+            </li>
+          <% end %>
+        </ol>
+      </div>
+
+      <div class="section">
+        <ul data-list-icon="gear" data-role="listview" data-inset="true">
+          <li data-role="list-divider"><%=@zhubajie.type %></li>
+          <% @zhubajie.items.each do |item| %>
+            <li>
+            <h3><%=item.name %></h3>
+                <p>项目地址: <%=item.site %></p>
+                <p>发布时间: <%=item.time %></p>
+                <span class="ui-li-count"><%=item.money %></span>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+
+
+    <footer data-role="footer" data-theme="b">
+      <h1>copyright @chucai 2013</h1>
+    </footer><!-- /footer -->
+  </div>
 </body>
 </html>

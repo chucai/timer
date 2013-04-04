@@ -6,9 +6,8 @@ require "nokogiri"
 require_relative "models/item"
 require_relative "models/list"
 
-require 'pry'
-
 get '/' do
-	@items = List.fetch_zhubajie
+	@rubychina = List.fetch_rubychina
+  @zhubajie = List.fetch_zhubajie
   erb :index
 end
