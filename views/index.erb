@@ -7,13 +7,31 @@
 <script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
 	<title>最新项目搜集</title>
 </head>
+<style type="text/css">
+.text-align {
+  text-align: center;
+}
+</style>
+<script type="text/javascript">
+  $(function(){
+    $(".refresh").bind("click", function(){
+      location.reload();
+    });
+  });
+</script>
 <body>
   <div data-role="page">
     <header data-role="header" data-position="fixed" data-theme="b">
-      <h1>项目列表</h1>
+
+     <a href="/" data-role="button" data-icon="home">首页</a>
+     <h1>项目列表</h1>
+     <a href="/" data-role="button" data-icon="refresh" class="refresh">刷新</a>
     </header>
 
     <div data-role="content">
+      <h5 class="text-align">
+        文件最后更新时间是 <%=@lasttime %>
+      </h5>
       <div class="section">
         <ol data-role="listview" data-inset="true">
           <li data-role="list-divider"><%=@rubychina.type %></li>

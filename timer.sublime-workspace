@@ -163,7 +163,7 @@
 			"file": "README.md",
 			"settings":
 			{
-				"buffer_size": 215,
+				"buffer_size": 317,
 				"line_ending": "Unix"
 			}
 		},
@@ -171,7 +171,7 @@
 			"file": "main.rb",
 			"settings":
 			{
-				"buffer_size": 1256,
+				"buffer_size": 1442,
 				"line_ending": "Unix"
 			}
 		},
@@ -179,7 +179,7 @@
 			"file": "server.rb",
 			"settings":
 			{
-				"buffer_size": 275,
+				"buffer_size": 298,
 				"line_ending": "Unix"
 			}
 		},
@@ -187,7 +187,7 @@
 			"file": "models/item.rb",
 			"settings":
 			{
-				"buffer_size": 74,
+				"buffer_size": 339,
 				"line_ending": "Unix"
 			}
 		},
@@ -195,7 +195,7 @@
 			"file": "models/list.rb",
 			"settings":
 			{
-				"buffer_size": 1375,
+				"buffer_size": 675,
 				"line_ending": "Unix"
 			}
 		},
@@ -203,7 +203,7 @@
 			"file": "views/index.erb",
 			"settings":
 			{
-				"buffer_size": 1615,
+				"buffer_size": 1705,
 				"line_ending": "Unix"
 			}
 		}
@@ -243,7 +243,7 @@
 				"Set Syntax: Markdown"
 			]
 		],
-		"width": 530.0
+		"width": 575.0
 	},
 	"console":
 	{
@@ -551,7 +551,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -560,15 +560,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 215,
+						"buffer_size": 317,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								134,
-								134
+								136,
+								136
 							]
 						],
 						"settings":
@@ -587,20 +587,21 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1256,
+						"buffer_size": 1442,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								543,
-								543
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 280.0,
@@ -614,15 +615,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 275,
+						"buffer_size": 298,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								235,
-								235
+								0,
+								0
 							]
 						],
 						"settings":
@@ -641,48 +642,44 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 74,
+						"buffer_size": 339,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								12,
-								25
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 4,
 					"file": "models/list.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1375,
+						"buffer_size": 675,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1205,
-								1205
+								0,
+								0
 							]
 						],
 						"settings":
@@ -702,20 +699,22 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1615,
+						"buffer_size": 1705,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2,
-								2
+								549,
+								549
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -743,18 +742,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -775,6 +767,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"index",
+				"views/index.erb"
+			],
 			[
 				"page_store.rb",
 				"example/anemone/lib/anemone/page_store.rb"
@@ -1282,10 +1278,6 @@
 			[
 				"insindex",
 				"app/views/institutions/index.html.erb"
-			],
-			[
-				"admin.rake",
-				"lib/tasks/init_admin.rake"
 			]
 		],
 		"width": 0.0
