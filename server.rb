@@ -1,6 +1,6 @@
 #encoding: utf-8
 require 'sinatra'
-require "sinatra/reloader"
+require "sinatra/reloader" if development?
 require 'open-uri'
 require "nokogiri"
 require_relative "models/item"
