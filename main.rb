@@ -51,10 +51,11 @@ end
 
 
 def run
+	file = File.join(File.expand_path("..", __FILE__), "database.txt")
   fetch_rubychina
   fetch_zhubajie
   result = MultiJson.dump(@hash,  :pretty => true)
-  File.open("database.txt", "w") do |f|
+  File.open(file, "w") do |f|
   	f << result
 	end
 
