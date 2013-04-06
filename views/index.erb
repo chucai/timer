@@ -3,8 +3,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name=apple-mobile-web-app-capable content=YES />
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
-<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
 	<title>最新项目搜集</title>
 </head>
 <style type="text/css">
@@ -39,6 +37,7 @@
             <li>
               <a href="<%=item.site %>" target="_blank">
                 <%=item.name %>
+                <span class="ui-li-count"><%=item.format_time %></span>
               </a>
             </li>
           <% end %>
@@ -65,5 +64,7 @@
       <h1>copyright @chucai 2013</h1>
     </footer><!-- /footer -->
   </div>
+  <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
 </body>
 </html>

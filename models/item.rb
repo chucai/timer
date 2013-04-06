@@ -9,6 +9,13 @@ class Item
       @money  = options["money"]
       @number = options["number"]
       @type   = options["type"]
+      @date_format = options[:data_format] || "%Y-%m-%d %H:%M"
     end
   end
+
+
+  def format_time
+    DateTime.parse(self.time).strftime(@date_format)
+  end
+
 end
