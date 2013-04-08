@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name=apple-mobile-web-app-capable content=YES />
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
-	<title>最新项目搜集</title>
+  <title>最新项目搜集</title>
 </head>
 <style type="text/css">
 .text-align {
@@ -20,8 +20,7 @@
 <body>
   <div data-role="page">
     <header data-role="header" data-position="fixed" data-theme="b">
-
-     <a href="/" data-role="button" data-icon="home">首页</a>
+     <a href="/" data-role="button" data-icon="home" class="refresh">首页</a>
      <h1>项目列表</h1>
      <a href="/" data-role="button" data-icon="refresh" class="refresh">刷新</a>
     </header>
@@ -31,17 +30,17 @@
         文件最后更新时间是 <%=@lasttime %>
       </h5>
       <div class="section">
-        <ol data-role="listview" data-inset="true">
+        <ul data-role="listview" data-inset="true">
           <li data-role="list-divider"><%=@rubychina.type %></li>
           <% @rubychina.items.each do |item| %>
             <li>
               <a href="<%=item.site %>" target="_blank">
-                <%=item.name %>
-                <span class="ui-li-count"><%=item.format_time %></span>
+                <h3><%=item.name %></h3>
+                <p><label>最后回复时间:</label> <span><%=item.format_time %></span></p>
               </a>
             </li>
           <% end %>
-        </ol>
+        </ul>
       </div>
 
       <div class="section">
